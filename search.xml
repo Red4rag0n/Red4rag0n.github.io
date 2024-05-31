@@ -29,6 +29,31 @@
     
     
     <entry>
+      <title>CNVD事件到补天通杀赏金漏洞挖掘</title>
+      <link href="/2022/12/30/CNVD%E4%BA%8B%E4%BB%B6%E5%88%B0%E8%A1%A5%E5%A4%A9%E9%80%9A%E6%9D%80%E8%B5%8F%E9%87%91%E6%BC%8F%E6%B4%9E%E6%8C%96%E6%8E%98/"/>
+      <url>/2022/12/30/CNVD%E4%BA%8B%E4%BB%B6%E5%88%B0%E8%A1%A5%E5%A4%A9%E9%80%9A%E6%9D%80%E8%B5%8F%E9%87%91%E6%BC%8F%E6%B4%9E%E6%8C%96%E6%8E%98/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>挖洞,讲究的是个运气</p><p>Body：日常挖洞我比较喜欢打开fofa和hunter和360搜索关键字，反正各种组合慢慢找慢慢看说不定就出货了</p><p>body&#x3D;”系统” &amp;&amp; country&#x3D;”CN”能打的资产贼多吧然后去偶遇,看到功能点都随手测一下</p><p><img src="https://cdn.jsdelivr.net/gh/sured4rag0n/PicGo-Sured4rag0n@main/wps1.jpg" alt="img"> </p><p>随便翻翻看先看这个站点有哪些功能点</p><p><img src="https://cdn.jsdelivr.net/gh/sured4rag0n/PicGo-Sured4rag0n@main/wps2.jpg" alt="img"> </p><p>看到搜索框 就试了试注入,Xss和可能存在ssrf，就加了个’看有无报错 </p><p><a href="http://218.18.158.124/search/?key=1%27">http://xxx.xx.xxx.xxx/search/?key=1%27</a></p><p><img src="https://cdn.jsdelivr.net/gh/sured4rag0n/PicGo-Sured4rag0n@main/wps3.jpg" alt="img"> </p><p>还真报错了挖洞9分运气 于是用SQLmap和超级SQL梭哈</p><p><img src="https://cdn.jsdelivr.net/gh/sured4rag0n/PicGo-Sured4rag0n@main/wps4.jpg" alt="img"> </p><p><img src="https://cdn.jsdelivr.net/gh/sured4rag0n/PicGo-Sured4rag0n@main/wps5.jpg" alt="img"> </p><p>交完cnvd之后就想会不会有这套模板同样特征的漏洞呢</p><p>于是翻网页源代码</p><p><img src="https://cdn.jsdelivr.net/gh/sured4rag0n/PicGo-Sured4rag0n@main/wps6.jpg" alt="img"> </p><p>拿到hunter去看资产贼多</p><p><img src="https://cdn.jsdelivr.net/gh/sured4rag0n/PicGo-Sured4rag0n@main/wps7.jpg" alt="img"> </p><p>Ok通杀到手，但资产不满足5000w于是交了补天</p><p><img src="https://cdn.jsdelivr.net/gh/sured4rag0n/PicGo-Sured4rag0n@main/wps8.jpg" alt="img"> </p><p>补天收录通用的规则是前台漏洞比如前台注入未授权rce啥的</p><p>然后漏洞复现互联网案例十例复现三案例十</p><p><img src="https://cdn.jsdelivr.net/gh/sured4rag0n/PicGo-Sured4rag0n@main/wps9.jpg" alt="img"> </p><p><img src="https://cdn.jsdelivr.net/gh/sured4rag0n/PicGo-Sured4rag0n@main/wps10.jpg" alt="img"> </p><p>判断有注入，然后sqlmap一把梭</p><p><img src="https://cdn.jsdelivr.net/gh/sured4rag0n/PicGo-Sured4rag0n@main/wps11.jpg" alt="img"> </p><p><img src="https://cdn.jsdelivr.net/gh/sured4rag0n/PicGo-Sured4rag0n@main/wps12.jpg" alt="img"> </p><p><img src="https://cdn.jsdelivr.net/gh/sured4rag0n/PicGo-Sured4rag0n@main/wps13.jpg" alt="img"> </p><p>还是扔进sqlmap梭哈</p><p><img src="https://cdn.jsdelivr.net/gh/sured4rag0n/PicGo-Sured4rag0n@main/wps14.jpg" alt="img"> </p><p><img src="https://cdn.jsdelivr.net/gh/sured4rag0n/PicGo-Sured4rag0n@main/wps15.jpg" alt="img"> </p><p><img src="https://cdn.jsdelivr.net/gh/sured4rag0n/PicGo-Sured4rag0n@main/wps16.jpg" alt="img"> </p><p>Sqlmap梭哈</p><p><img src="https://cdn.jsdelivr.net/gh/sured4rag0n/PicGo-Sured4rag0n@main/wps17.jpg"> </p><p>​–记2022年12.30的一次拿到赏金的小通杀</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 补天 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 补天 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>时光代理人</title>
       <link href="/2022/10/05/%E6%97%B6%E5%85%89%E4%BB%A3%E7%90%86%E4%BA%BA/"/>
       <url>/2022/10/05/%E6%97%B6%E5%85%89%E4%BB%A3%E7%90%86%E4%BA%BA/</url>
