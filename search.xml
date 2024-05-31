@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title></title>
+      <link href="/2023/12/23/CNVD%E4%BA%8B%E4%BB%B6%E5%88%B0%E8%A1%A5%E5%A4%A9%E9%80%9A%E6%9D%80%E8%B5%8F%E9%87%91%E6%BC%8F%E6%B4%9E%E6%8C%96%E6%8E%98/"/>
+      <url>/2023/12/23/CNVD%E4%BA%8B%E4%BB%B6%E5%88%B0%E8%A1%A5%E5%A4%A9%E9%80%9A%E6%9D%80%E8%B5%8F%E9%87%91%E6%BC%8F%E6%B4%9E%E6%8C%96%E6%8E%98/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><em><strong>*挖洞,讲究的是个运气*</strong></em></p><p><em><strong>*Body：日常挖洞我比较喜欢打开fofa和hunter和360搜索关键字，反正各种组合慢慢找慢慢看说不定就出货了*</strong></em></p><p><em><strong>*body&#x3D;”系统” &amp;&amp; country&#x3D;”CN”能打的资产贼多吧*</strong></em><em><strong>*然后去偶遇,看到*</strong></em><em><strong>*功能点*</strong></em><em><strong>*都随手测一下*</strong></em></p><p><img src="https://cdn.jsdelivr.net/gh/sured4rag0n/PicGo-Sured4rag0n@main/wps1.jpg" alt="img"> </p><p><em><strong>*随便翻翻看*</strong></em> <em><strong>*先看这个站点有哪些功能点*</strong></em></p><p><img src="https://cdn.jsdelivr.net/gh/sured4rag0n/PicGo-Sured4rag0n@main/wps2.jpg" alt="img"> </p><p><em><strong>*看到搜索框 就试了试注入,Xss和可能存在ssrf，就加了个*</strong></em><em><strong>*’*</strong></em><em><strong>*看有无报错*</strong></em></p><p><a href="http://218.18.158.124/search/?key=1%27">http://xxx.xx.xxx.xxx/search/?key=1%27</a></p><p><img src="https://cdn.jsdelivr.net/gh/sured4rag0n/PicGo-Sured4rag0n@main/wps3.jpg" alt="img"> </p><p><em><strong>*还真报错了挖洞9分运气,会手注的师傅教教me 于是用SQLmap和超级SQL梭哈*</strong></em></p><p><em><strong>*python3 sqlmap.py -u http:&#x2F;&#x2F;*</strong></em><em><strong>*xxx*</strong></em><em><strong>*.*</strong></em><em><strong>*xx*</strong></em><em><strong>*.*</strong></em><em><strong>*xxx*</strong></em><em><strong>*.*</strong></em><em><strong>*xxx*</strong></em><em><strong>*&#x2F;search&#x2F;?key&#x3D;1*</strong></em>  <em><strong>*–random-agent*</strong></em> <em><strong>*–batch*</strong></em></p><p><img src="https://cdn.jsdelivr.net/gh/sured4rag0n/PicGo-Sured4rag0n@main/wps4.jpg" alt="img"> </p><p><img src="https://cdn.jsdelivr.net/gh/sured4rag0n/PicGo-Sured4rag0n@main/wps5.jpg" alt="img"> </p><p><em><strong>*交完*</strong></em><em><strong>*cnvd之后就想会不会有这套模板同样特征的漏洞呢*</strong></em></p><p><em><strong>*于是翻网页源代码*</strong></em></p><p><img src="https://cdn.jsdelivr.net/gh/sured4rag0n/PicGo-Sured4rag0n@main/wps6.jpg" alt="img"> </p><p><em><strong>*拿到*</strong></em><em><strong>*hunter去看资产贼多*</strong></em></p><p><img src="https://cdn.jsdelivr.net/gh/sured4rag0n/PicGo-Sured4rag0n@main/wps7.jpg" alt="img"> </p><p><em><strong>*Ok通杀到手，但资产不满足5000w于是交了补天*</strong></em></p><p><img src="https://cdn.jsdelivr.net/gh/sured4rag0n/PicGo-Sured4rag0n@main/wps8.jpg" alt="img"> </p><p><em><strong>*补天收录通用的规则是前台漏洞比如前台注入未授权rce啥的*</strong></em></p><p><em><strong>*然后漏洞复现互联网案例十例复现三案例十*</strong></em></p><p><img src="https://cdn.jsdelivr.net/gh/sured4rag0n/PicGo-Sured4rag0n@main/wps9.jpg" alt="img"> </p><p><img src="https://cdn.jsdelivr.net/gh/sured4rag0n/PicGo-Sured4rag0n@main/wps10.jpg" alt="img"> </p><p>判断有注入，然后sqlmap一把梭</p><p>python3 sqlmap.py -u <a href="https://www.xxx.cn/search/index.html?key=1">https://www.xxx.cn/search/index.html?key=1</a> –random-agent –batch</p><p><img src="https://cdn.jsdelivr.net/gh/sured4rag0n/PicGo-Sured4rag0n@main/wps11.jpg" alt="img"> </p><p><img src="https://cdn.jsdelivr.net/gh/sured4rag0n/PicGo-Sured4rag0n@main/wps12.jpg" alt="img"> </p><p><img src="https://cdn.jsdelivr.net/gh/sured4rag0n/PicGo-Sured4rag0n@main/wps13.jpg" alt="img"> </p><p>还是扔进sqlmap梭哈</p><p>python3 sqlmap.py -u <a href="https://www.xxxxxx.com/search/?key=1">https://www.xxxxxx.com/search/?key=1</a> –random-agent –batch</p><p><img src="https://cdn.jsdelivr.net/gh/sured4rag0n/PicGo-Sured4rag0n@main/wps14.jpg" alt="img"> </p><p><img src="https://cdn.jsdelivr.net/gh/sured4rag0n/PicGo-Sured4rag0n@main/wps15.jpg" alt="img"> </p><p><img src="https://cdn.jsdelivr.net/gh/sured4rag0n/PicGo-Sured4rag0n@main/wps16.jpg" alt="img"> </p><p>Sqlmap梭哈</p><p>python3 sqlmap.py -u <a href="https://www.xxxxxx.cn/search/?key=1">https://www.xxxxxx.cn/search/?key=1</a> –random-agent –batch</p><p><img src="https://cdn.jsdelivr.net/gh/sured4rag0n/PicGo-Sured4rag0n@main/wps17.jpg"> </p><p>–记2022年12.24</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>多给我点思路</title>
       <link href="/2023/11/11/%E5%A4%9A%E7%BB%99%E6%88%91%E7%82%B9%E6%80%9D%E8%B7%AF/"/>
       <url>/2023/11/11/%E5%A4%9A%E7%BB%99%E6%88%91%E7%82%B9%E6%80%9D%E8%B7%AF/</url>
@@ -46,31 +59,6 @@
         <tags>
             
             <tag> EDUSRC </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>CNVD事件到补天通杀赏金漏洞挖掘</title>
-      <link href="/2022/12/24/CNVD%E4%BA%8B%E4%BB%B6%E5%88%B0%E8%A1%A5%E5%A4%A9%E9%80%9A%E6%9D%80%E8%B5%8F%E9%87%91%E6%BC%8F%E6%B4%9E%E6%8C%96%E6%8E%98/"/>
-      <url>/2022/12/24/CNVD%E4%BA%8B%E4%BB%B6%E5%88%B0%E8%A1%A5%E5%A4%A9%E9%80%9A%E6%9D%80%E8%B5%8F%E9%87%91%E6%BC%8F%E6%B4%9E%E6%8C%96%E6%8E%98/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>本文仅用于技术讨论与学习，利用此文所提供的信息或工具而造成的任何直接或者间接的后果及损失，均由使用者本人负责，文章作者不为此承担任何责任。<br><strong>挖洞,讲究的是个运气</strong></p><p><strong>Body：日常挖洞我比较喜欢打开fofa和hunter和360搜索关键字，反正各种组合慢慢找慢慢看说不定就出货了</strong></p><p><strong>body&#x3D;&quot;系统&quot; &amp;&amp;<br>country&#x3D;&quot;CN&quot;能打的资产贼多吧然后去点开,看到[功能点]{.mark}都随手测一下</strong></p><p><img src="C:/Users/SuRed4rag0n/AppData/Roaming/Typora/typora-user-images/image-20231107134700195.png" alt="image-20231107134700195"></p><p><strong>随便翻翻看 先看这个站点有哪些功能点</strong></p><p><img src="C:/Users/SuRed4rag0n/AppData/Roaming/Typora/typora-user-images/image-20231107134748850.png" alt="image-20231107134748850"></p><p><strong>看到搜索框 就试了试注入,Xss和可能存在ssrf，就加了个’看有无报错</strong></p><p><a href="http://218.18.158.124/search/?key=1%27">http://xxx.xx.xxx.xxx/search/?key=1%27</a></p><p><img src="C:/Users/SuRed4rag0n/AppData/Roaming/Typora/typora-user-images/image-20231107134807522.png">{width&#x3D;”5.760416666666667in”<br>height&#x3D;”2.9166666666666665in”}</p><p><strong>还真报错了挖洞9分运气,会手注的师傅带带 于是用SQLmap和超级SQL梭哈</strong></p><p><strong>python3 sqlmap.py -u <a href="http://xxx.xx.xxx.xxx/search/?key=1">http://xxx.xx.xxx.xxx/search/?key=1</a><br>--random-agent --batch</strong></p><p><img src="C:/Users/SuRed4rag0n/AppData/Roaming/Typora/typora-user-images/image-20231107134819322.png" alt="image-20231107134819322"></p><p><img src="C:/Users/SuRed4rag0n/AppData/Roaming/Typora/typora-user-images/image-20231107134824135.png" alt="image-20231107134824135"></p><p><strong>交完cnvd之后就想会不会有这套模板同样特征的漏洞呢</strong></p><p><strong>于是翻网页源代码</strong></p><p><img src="C:/Users/SuRed4rag0n/AppData/Roaming/Typora/typora-user-images/image-20231107134829100.png" alt="image-20231107134829100"></p><p><strong>拿到hunter去看资产贼多</strong></p><p><img src="C:/Users/SuRed4rag0n/AppData/Roaming/Typora/typora-user-images/image-20231107134834980.png" alt="image-20231107134834980"></p><p><strong>Ok通杀到手，但资产不满足5000w于是交了补天</strong></p><p><img src="C:/Users/SuRed4rag0n/AppData/Roaming/Typora/typora-user-images/image-20231107134841927.png" alt="image-20231107134841927"></p><p><strong>补天收录通用的规则是前台漏洞比如前台注入未授权rce啥的</strong></p><p><strong>然后漏洞复现互联网案例十例复现三案例十</strong></p><p><img src="C:/Users/SuRed4rag0n/AppData/Roaming/Typora/typora-user-images/image-20231107134847253.png" alt="image-20231107134847253"></p><p><img src="C:/Users/SuRed4rag0n/AppData/Roaming/Typora/typora-user-images/image-20231107134854534.png" alt="image-20231107134854534"></p><p>判断有注入，然后sqlmap一把梭</p><p>python3 sqlmap.py -u <a href="https://www.xxx.cn/search/index.html?key=1">https://www.xxx.cn/search/index.html?key=1</a><br>--random-agent --batch</p><p><img src="C:/Users/SuRed4rag0n/AppData/Roaming/Typora/typora-user-images/image-20231107134902126.png" alt="image-20231107134902126"></p><p><img src="C:/Users/SuRed4rag0n/AppData/Roaming/Typora/typora-user-images/image-20231107134915466.png" alt="image-20231107134915466"></p><p><img src="C:/Users/SuRed4rag0n/AppData/Roaming/Typora/typora-user-images/image-20231107134920429.png" alt="image-20231107134920429"></p><p>还是扔进sqlmap梭哈</p><p>python3 sqlmap.py -u <a href="https://www.xxxxxx.com/search/?key=1">https://www.xxxxxx.com/search/?key=1</a><br>--random-agent --batch</p><p><img src="C:/Users/SuRed4rag0n/AppData/Roaming/Typora/typora-user-images/image-20231107134926228.png" alt="image-20231107134926228"></p><p><img src="C:/Users/SuRed4rag0n/AppData/Roaming/Typora/typora-user-images/image-20231107134930280.png" alt="image-20231107134930280"></p><p><img src="C:/Users/SuRed4rag0n/AppData/Roaming/Typora/typora-user-images/image-20231107134936862.png" alt="image-20231107134936862"></p><p>Sqlmap梭哈</p><p>python3 sqlmap.py -u <a href="https://www.xxxxxx.cn/search/?key=1">https://www.xxxxxx.cn/search/?key=1</a> --random-agent<br>--batch</p><p><img src="C:/Users/SuRed4rag0n/AppData/Roaming/Typora/typora-user-images/image-20231107134947699.png" alt="image-20231107134947699"></p><p>​–记2022年12.24第一次挖洞的小通杀</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> CNVD,补天 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> CNVD,补天 </tag>
             
         </tags>
       
