@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>攻防演练&amp;SRC&amp;众测&amp;渗透测试</title>
+      <link href="/2024/05/31/%E6%94%BB%E9%98%B2%E6%BC%94%E7%BB%83/"/>
+      <url>/2024/05/31/%E6%94%BB%E9%98%B2%E6%BC%94%E7%BB%83/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="攻防演练"><a href="#攻防演练" class="headerlink" title="攻防演练"></a>攻防演练</h1><h2 id="山东省教育攻防演练-影子红队个人13630，团队前十"><a href="#山东省教育攻防演练-影子红队个人13630，团队前十" class="headerlink" title="山东省教育攻防演练(影子红队个人13630，团队前十)"></a>山东省教育攻防演练(影子红队个人13630，团队前十)</h2><h3 id="山东科技大学泰山科技学院成果-12700"><a href="#山东科技大学泰山科技学院成果-12700" class="headerlink" title="山东科技大学泰山科技学院成果(12700)"></a>山东科技大学泰山科技学院成果(12700)</h3><p><img src="https://cdn.jsdelivr.net/gh/sured4rag0n/PicGo-Sured4rag0n@main/image-20240531175423467.png" alt="image-20240531175423467"></p><h3 id="山东英才学院"><a href="#山东英才学院" class="headerlink" title="山东英才学院"></a>山东英才学院</h3><p><img src="https://cdn.jsdelivr.net/gh/sured4rag0n/PicGo-Sured4rag0n@main/image-20240531175620717.png" alt="image-20240531175620717"></p><h3 id="泰山护理职业学院"><a href="#泰山护理职业学院" class="headerlink" title="泰山护理职业学院"></a>泰山护理职业学院</h3><p><img src="https://cdn.jsdelivr.net/gh/sured4rag0n/PicGo-Sured4rag0n@main/image-20240531175710235.png" alt="image-20240531175710235"></p><h2 id="山东省淄博市攻防演练-个人6500左右，团队第一"><a href="#山东省淄博市攻防演练-个人6500左右，团队第一" class="headerlink" title="山东省淄博市攻防演练(个人6500左右，团队第一)"></a>山东省淄博市攻防演练(个人6500左右，团队第一)</h2><h3 id="山东轻工职业学院"><a href="#山东轻工职业学院" class="headerlink" title="山东轻工职业学院"></a>山东轻工职业学院</h3><p><img src="https://cdn.jsdelivr.net/gh/sured4rag0n/PicGo-Sured4rag0n@main/image-20240531175857596.png" alt="image-20240531175857596"></p><h2 id="山东省滨州市攻防演练-个人1w分左右，团队第二-黑幕-第一"><a href="#山东省滨州市攻防演练-个人1w分左右，团队第二-黑幕-第一" class="headerlink" title="山东省滨州市攻防演练(个人1w分左右，团队第二(黑幕 第一))"></a>山东省滨州市攻防演练(个人1w分左右，团队第二(黑幕 第一))</h2><p><img src="https://cdn.jsdelivr.net/gh/sured4rag0n/PicGo-Sured4rag0n@main/image-20240531180645623.png" alt="image-20240531180645623"></p><h2 id="山东省淄博市博山区-重大战果"><a href="#山东省淄博市博山区-重大战果" class="headerlink" title="山东省淄博市博山区(重大战果)"></a>山东省淄博市博山区(重大战果)</h2><p><img src="https://cdn.jsdelivr.net/gh/sured4rag0n/PicGo-Sured4rag0n@main/image-20240531181127810.png" alt="image-20240531181127810"></p><p><img src="https://cdn.jsdelivr.net/gh/sured4rag0n/PicGo-Sured4rag0n@main/image-20240531181202116.png" alt="image-20240531181202116"></p><p><img src="https://cdn.jsdelivr.net/gh/sured4rag0n/PicGo-Sured4rag0n@main/image-20240531181303893.png" alt="image-20240531181303893"></p><h1 id="SRC"><a href="#SRC" class="headerlink" title="SRC"></a>SRC</h1><h2 id="百度"><a href="#百度" class="headerlink" title="百度"></a>百度</h2><p>百度某APP存在OAuth2.0劫持漏洞</p><h2 id="快手"><a href="#快手" class="headerlink" title="快手"></a>快手</h2><p>快手某APP存在OAuth2.0劫持漏洞</p><h1 id="众测"><a href="#众测" class="headerlink" title="众测"></a>众测</h1><h2 id="某车企"><a href="#某车企" class="headerlink" title="某车企"></a>某车企</h2><p>越权+逻辑漏洞</p><h2 id="上海某局"><a href="#上海某局" class="headerlink" title="上海某局"></a>上海某局</h2><p>springboot未授权+heapdump(MySQL数据库账密+Redis账密)</p><p>phpinfo页面泄露</p><p>XSS*2</p><h1 id="渗透测试"><a href="#渗透测试" class="headerlink" title="渗透测试"></a>渗透测试</h1><h2 id="某石油企业"><a href="#某石油企业" class="headerlink" title="某石油企业"></a>某石油企业</h2><p>web后台越权+1</p><p>小程序未授权大量信息泄露(5要素)+1</p><p>web端SQL注入+1</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 记录一下 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 记录一下 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>EDUSRC证书</title>
       <link href="/2023/05/29/EDUSRC%E8%AF%81%E4%B9%A6/"/>
       <url>/2023/05/29/EDUSRC%E8%AF%81%E4%B9%A6/</url>
